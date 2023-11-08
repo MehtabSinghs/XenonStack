@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+            background-image: url("backg.jpg");
+			background-color: #000000;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+			font-family: Arial, sans-serif;
+		}
+		.login_container {
+			padding: 16px;
+			background-color: #4d4d4d;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #ccc;
+			margin: auto;
+			margin-top: 100px;
+			width: 50%;
+			max-width: 500px;
+			min-width: 300px;
+			text-align: center;
+		}
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			background-color: #45a049;
+		}
+
+        nav {
+    background-color: #333;
+    color: #5c5858;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-postion;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    color: #3b0606;
+    padding: 5rem 3rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-style: italic;
+    font-size: 4rem;
+    margin: 0;
+  }
+	</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <header>
+    </header>
+	<div class="login_container">
+		<h2>Login</h2>
+		<form action="#" method="POST">
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Enter Email" name="email" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit">Login</button>
+			<br>
+			
+		</form>
+		<button type="signup">
+		<a href="signup.html" class="button "></a>
+		<a href="signup.html" class="button">Sign Up</a>
+
+	</div>
+
+</body>
+</html>
