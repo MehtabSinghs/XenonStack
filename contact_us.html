@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-attachment:fixed;
+            background-image: url("contact.jpg");
+			background-color: #000000;
+            justify-content:stretch;
+            background-repeat: repeat-x;
+            background-size:cover;
+            background-position:center;
+			font-family: Arial, sans-serif;
+		}
+          
+          nav ul {
+            display: flex;
+            list-style: none;
+          }
+          
+          nav ul li {
+            margin-right: 1rem;
+          }
+          
+          nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+          }       
+          
+          nav {
+            background-color: #333;
+            color: #5c5858;
+            display: flex;
+            justify-content: space-between;
+            align-items: self-postion;
+            padding: 1rem;
+          }
+          
+          
+         
+        
+          
+        
+          
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        
+        .contact-form {
+            opacity: 0.8;
+            text-align: center;
+            background:     #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 6px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="phn"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        
+
+          
+          
+          
+          
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Name" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phn">Phone:</label>
+                    <input type="numeric" placeholder="Phone" id="phn" name="phn" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Enter your message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    
+</body>
+</html>

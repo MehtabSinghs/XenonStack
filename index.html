@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+/* Styling for the image thumbnails */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.thumbnail {
+  margin: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.thumbnail img {
+  width: 450px; /* Set the width of the thumbnails */
+  height: 300px; /* Set the height of the thumbnails */
+  display:block;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+		body {
+            background-attachment:fixed;
+            background-image: url("login_bg.jpg");
+			background-color: #000000;
+            justify-content:stretch;
+            background-repeat: repeat-x;
+            background-size:cover;
+            background-position:center;
+			font-family: Arial, sans-serif;
+		}
+		.login_container {
+			padding: 16px;
+			background-color: #4d4d4d;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #ccc;
+			margin: auto;
+			margin-top: 100px;
+			width: 50%;
+			max-width: 500px;
+			min-width: 300px;
+			text-align: center;
+		}
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			background-color: #45a049;
+		}
+
+        nav {
+    background-color: #333;
+    color: #5c5858;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-postion;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    color: #3b0606;
+    padding: 5rem 3rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-style: italic;
+    font-size: 4rem;
+    margin: 0;
+  }
+	</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+      <div class="gallery">
+        <div class="thumbnail" onclick="imageClick('image1.jpg')">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+    
+        <div class="thumbnail" onclick="imageClick('image2.jpg')">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+    
+        <div class="thumbnail" onclick="imageClick('image3.jpg')">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+          <div class="thumbnail" onclick="imageClick('image1.jpg')">
+              <img src="image4.jpg" alt="Image 4">
+          </div>
+  
+          <div class="thumbnail" onclick="imageClick('image2.jpg')">
+              <img src="image5.jpg" alt="Image 5">
+          </div>
+  
+          <div class="thumbnail" onclick="imageClick('image3.jpg')">
+              <img src="image6.jpg" alt="Image 6">
+          </div>
+
+          <div class="thumbnail" onclick="imageClick('image3.jpg')">
+            <img src="image7.jpg" alt="Image 7">
+        </div>
+
+        <div class="thumbnail" onclick="imageClick('image3.jpg')">
+          <img src="image8.jpg" alt="Image 8">
+      </div>
+  
+       
+    </header>
+	
+
+</body>
+</html>
